@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>context</title>
+</head>
+<body>
+	<h2>Calculator Servlet</h2><hr>
+	<form method="post" action="/application">
+		<input type="text" name="num" size="10">		<!-- name이 request 퍄라미터로 전달된다. -->
+		<select name="op" onchange="this.form.submit()">
+			<option value="">선택</option>
+			<option value="=">=</option>
+			<option value="+">+</option>
+			<option value="-">-</option>
+			<option value="*">*</option>
+			<option value="/">/</option>
+		</select>
+
+	</form>
+</body>
+</html>
